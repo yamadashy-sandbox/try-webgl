@@ -20,8 +20,10 @@ uniform float t; // time
 uniform vec2  r; // resolution
 
 void main(void){
-    float a = gl_FragCoord.x / r.x;
-    gl_FragColor = vec4(vec3(a, a, a), 1.0);
+    float r = abs(sin(t)); // *1
+    float g = abs(cos(t));
+    float b = (r + g) / 2.0; // *2
+    gl_FragColor = vec4(r, g, b, 1.0);
 }
 
 </script>
