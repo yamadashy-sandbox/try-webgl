@@ -30,7 +30,7 @@
 
     if (u.addEventListener("keydown", function (e) {
       T = 27 !== e.keyCode
-    }, !1), T = !0, a = n("c"), i = a.getContext("webgl"), F = i.bindTexture, a.width = I = u.innerWidth, a.height = U = u.innerHeight, function () {
+    }, !1), T = !0, a = n("canvas-viewport"), i = a.getContext("webgl"), F = i.bindTexture, a.width = I = u.innerWidth, a.height = U = u.innerHeight, function () {
       for (k = D = 1; k < Math.max(I, U);) k = Math.pow(2, ++D)
     }(), a.addEventListener("mousemove", t, !0), m = [0, 0], o = i.createProgram(), l = "attribute vec3 p;void main(){gl_Position=vec4(p,1.);}", s = n("f").textContent, !r(o, 0, l) && !r(o, 1, s)) {
       if (i.linkProgram(o), L = i.getProgramParameter(o, 35714), !L) return void h(i.getProgramInfoLog(o));
