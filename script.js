@@ -1,4 +1,4 @@
-!function () {
+(function () {
   function e() {
     function e() {
       T && (p = .001 * (Date.now() - C), i.useProgram(o), i.bindFramebuffer(E, c.f), i.bindTexture(R, d.t), i.enableVertexAttribArray(x), i.vertexAttribPointer(x, 3, 5126, !1, 0, 0), i.viewport(0, 0, k, k), i.clear(16384), i.uniform2fv(f.m, m), i.uniform1f(f.t, p), i.uniform2fv(f.r, [k, k]), i.uniform1i(f.s, 0), i.drawArrays(5, 0, 4), i.useProgram(b), i.bindFramebuffer(E, null), i.bindTexture(R, c.t), i.enableVertexAttribArray(P), i.vertexAttribPointer(P, 3, 5126, !1, 0, 0), i.viewport(0, 0, I, U), i.clear(16384), i.uniform1i(v.t, 0), i.drawArrays(5, 0, 4), i.flush(), g = c, c = d, d = g, requestAnimationFrame(e))
@@ -37,4 +37,4 @@
       b = i.createProgram(), l = "attribute vec3 p;varying vec2 v;void main(){v=(p+1.).xy/2.;gl_Position=vec4(p,1.);}", s = "precision mediump float;uniform sampler2D t;varying vec2 v;void main(){gl_FragColor=texture2D(t,v);}", r(b, 0, l), r(b, 1, s), i.linkProgram(b), e()
     }
   }, !1)
-}();
+})();
